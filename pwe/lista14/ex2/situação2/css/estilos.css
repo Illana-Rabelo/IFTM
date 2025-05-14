@@ -1,0 +1,10 @@
+.configuracao{
+  color: red;
+  background-color: yellow;
+}
+.configuracao h2{
+    text-decoration: underline;
+}
+.configuracao strong{
+    width: 200px;
+}

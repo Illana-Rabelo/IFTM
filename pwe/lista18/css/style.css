@@ -1,0 +1,160 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    width: auto;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.seção1 h3{
+    display: flex;
+    justify-content: center;
+    color: rgb(130, 0, 0);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 2.5px solid rgb(130, 0, 0);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.seção1 h2{
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.seção1 p{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    width: 800px;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.seção1 button{
+    background-color: rgb(130, 0, 0);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto 50px auto;
+    border: none;
+    display: block;
+}
+
+.seção1 button:hover{
+    background-color: rgb(183, 77, 6);
+}
+
+.seção2 {
+    background-color: lightgray;
+    margin: 0 auto;
+    
+}
+
+.seção2 > h3{
+    color: rgb(130, 0, 0);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.seção2 img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.seção2 > div > div > h3 {
+
+    color: black;
+    padding: 30px;
+    margin-top: -60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.seção2 p {
+    text-align: justify;
+    padding: 25px;
+}
+
+.caixa1 {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.seção3 h3{
+    color: rgb(130, 0, 0);
+    text-align: center;
+    margin-top: 70px;
+}
+
+.seção3 p {
+    text-align: justify;
+    padding: 25px;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.container3 div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.container3 div img {
+    width: 400px;
+    height: 200px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

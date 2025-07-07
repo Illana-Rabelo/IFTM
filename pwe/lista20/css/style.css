@@ -1,1 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
 
+body {
+    font-family: arial;
+}
+
+/*Versão: Mobile*/
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+header nav a:link,
+header nav a:visited {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+header nav a:hover {
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.section_apresentacao {
+    text-align: center;
+    color: rgb(239, 239, 239);
+}
+
+section:nth-of-type(odd) {
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+    color: rgb(239, 239, 239);
+}
+
+.section_aplicativos p {
+    text-align: justify;
+}
+
+section {
+    padding: 30px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+section p {
+    padding: 30px 0px;
+    line-height: 150%;
+}
+
+input[type="button"] {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(0, 0, 151);
+}
+
+.section_planos > div > div {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.section_planos > div > div > p {
+    text-align: justify;
+}
+
+.section_planos > div > div h2 {
+    color: red;
+    font-size: 20px;
+    margin: 5px 0px 20px 0px;
+}
+
+.section_planos > div,
+.section_produtos > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section_produtos > div > div {
+    text-align: center;
+}
+
+.section_produtos > div > div p {
+    text-align: justify;
+}
+
+.section_produtos input[type="button"] {
+    margin: 0px;
+}
+
+.section_produtos > div > div {
+    padding: 20px 0px;
+}
+
+/* CORRIGIDO E ESTILIZADO: SECTION_CLIENTE */
+.section_cliente {
+    color: white;
+}
+
+.section_cliente a {
+    color: white;
+    text-decoration: none;
+}
+
+.section_cliente > div > div {
+    padding: 15px;
+}
+
+.section_cliente > div p {
+    text-align: justify;
+    font-style: italic;
+    color: white;
+}
+
+.section_cliente h2 {
+    padding-bottom: 30px;
+}
+
+.section_cliente legend,
+.section_cliente label {
+    padding-right: 10px;
+}
+
+.section_cliente input[type="text"],
+.section_cliente input[type="tel"],
+.section_cliente input[type="email"] {
+    width: 170px;
+    padding: 5px;
+}
+
+.section_cliente input[type="email"]:focus {
+    background-color: rgb(225, 245, 146);
+}
+
+.section_cliente input[type="tel"]:focus {
+    background-color: rgb(250, 177, 241);
+}
+
+.section_cliente input[type="button"] {
+    width: 100px;
+    border: 0px;
+    border-radius: 3px;
+    padding: 7px;
+    cursor: pointer;
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+}
+
+.section_cliente input[type="button"]:hover {
+    background-color: #9faa91;
+    color: white;
+}
+
+.section_cliente fieldset {
+    width: 635px;
+    padding: 15px;
+    border: 1px solid white;
+}
+
+.section_cliente ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section_cliente ul li {
+    margin-bottom: 5px;
+    text-align: justify;
+
+}
+.section_cliente ul li a:hover{
+    color: #9faa91;
+}
+
+.section_cliente table td {
+    vertical-align: top;
+    padding: 10px;
+}
+.section_cliente {
+    text-align: center;
+}
+
+.section_cliente > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.section_cliente table {
+    margin: 0 auto;
+}
+
+
+/* Figcaption */
+.section_cliente > div > div figcaption {
+    padding-bottom: 15px;
+}
+
+figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+footer {
+    background-color: black;
+    padding: 50px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+/* Tablet e Desktop */
+@media screen and (min-width: 768px) {
+    header nav ul {
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    header nav a:link,
+    header nav a:visited {
+        padding: 15px 25px;
+    }
+
+    .section_apresentacao > div {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .section_planos > div,
+    .section_produtos > div {
+        flex-direction: row;
+    }
+
+    section > div {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .section_planos > div > div,
+    .section_produtos > div > div {
+        text-align: center;
+        padding: 0px 30px;
+    }
+
+    section {
+        padding: 50px;
+    }
+
+    figcaption {
+        font-size: 24px;
+    }
+
+    .section_cliente > div {
+        display: flex;
+        flex-direction: row;
+    }
+}

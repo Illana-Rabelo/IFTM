@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+
+body {
+    background-color: black;
+}
+
+header nav {
+    background-color: darkblue;
+    border-bottom: 5px solid yellow;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+
+header ul li {
+    padding: 25px 50px;
+}
+
+header ul a:link,
+header ul a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+header li:hover {
+    background-color: yellow;
+}
+
+header li:hover a {
+    color: black;
+}
+.container {
+    width: 1200px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.container > div {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+.container > div h2 {
+    color: rgb(7, 7, 202);
+    text-align: center;
+} 
+.container > div p {
+    padding: 10px;
+    text-align: justify;
+}
+.container > div summary,
+.container > div > div > details > p{
+    color: darkorange;
+    text-align: left;
+}
+.secaoCelulares > div > div{
+    text-align: center;
+    padding: 10px;
+}
+.secaoWhats .containerWhats {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.secaoWhats .containerWhats > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.secaoWhats img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.secaoWhats h2 {
+  font-size: 1.5em;
+  padding-bottom: 40px;
+  text-align: left;
+}
+
+.secaoWhats ul {
+  padding-left: 20px;
+}
+
+.secaoWhats a {
+  color: purple;
+  text-decoration: none;
+}
+
+.secaoWhats a:hover {
+  text-decoration: underline;
+}
+
+.secaoWhats p {
+  text-align: left;
+}
+
+.secaoWhats button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.secaoMapa h2 {
+  color: #0033cc;
+  margin-bottom: 15px;
+}
+
+.secaoMapa p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.secaoMapa {
+background-color: white;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.secaoMapa h2 {
+  color: #0033cc;
+  margin-bottom: 15px;
+}
+
+.secaoMapa p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.mapa-container {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mapa-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+footer {
+    background-color: black;
+    color: white;
+   text-align: center;
+   padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  /* Menu responsivo */
+  header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header ul li {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Container geral */
+  .container {
+    width: 100%;
+  }
+
+  .container > div {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .container > div h2 {
+    font-size: 1.3em;
+  }
+
+  .container > div p {
+    padding: 5px 0;
+    text-align: left;
+  }
+
+  /* Seção Celulares */
+  .secaoCelulares > div > div {
+    padding: 10px 0;
+  }
+
+  /* Seção WhatsApp */
+  .secaoWhats .containerWhats {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .secaoWhats .containerWhats > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .secaoWhats h2 {
+    text-align: center;
+  }
+
+  .secaoWhats ul {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  .secaoWhats p {
+    text-align: center;
+  }
+
+  /* Seção Mapa */
+  .secaoMapa {
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .secaoMapa p {
+    text-align: justify;
+  }
+
+  /* Mapa responsivo */
+  .mapa-container {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Rodapé */
+  footer {
+    padding: 15px;
+    font-size: 0.9em;
+  }
+}

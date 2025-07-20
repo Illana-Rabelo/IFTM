@@ -1,0 +1,294 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.titulo h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+.titulo em {
+    color: #ffcc00;
+    font-style: normal;
+}
+
+.imperial-script {
+    font-family: 'Imperial Script', cursive;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #222;
+}
+
+/* Main */
+main {
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Início da Música (Index Page) - Section 1 */
+/* Esta seção usa float para a imagem e o texto ao lado */
+.inicio-musica-container {
+    overflow: hidden; /* Isso "limpa" os floats dentro do container */
+}
+
+.inicio-musica .imagem {
+    float: left; /* Flutua a imagem para a esquerda */
+    width: 450px; /* Largura base da imagem */
+    max-width: 40%; /* Largura máxima responsiva */
+    margin-right: 30px; /* Espaço à direita da imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+    min-width: 250px; /* Largura mínima para a imagem */
+}
+
+.inicio-musica .imagem img {
+    max-width: 100%; /* Garante que a imagem se ajuste ao seu container */
+    height: auto;
+    display: block;
+}
+
+/* Estilos Gerais para as Seções */
+section {
+    padding: 3rem 0; /* Adiciona espaçamento vertical a todas as seções */
+}
+
+/* Títulos das seções */
+section h2,
+section h3 {
+    text-align: center;
+    color: #6a4a00; /* Marrom escuro */
+    margin-bottom: 1.5rem;
+    font-size: 2.2em;
+}
+
+/* Padronização de parágrafos */
+section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1em;
+}
+
+section p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Estilos para as seções com imagens (Páginas de Conteúdo como Rock, K-POP, MPB) */
+/* Estas seções usam Flexbox para imagem e texto lado a lado */
+.section-image {
+    display: flex; /* Esta é a linha que falta no seu navegador atual! */
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.section-image .image-wrapper {
+    flex-shrink: 0; /* Impede que a imagem encolha demais */
+}
+
+.section-image .image-wrapper img {
+    display: flex;
+    max-width: 100%; /* Garante que a imagem se ajuste ao seu container */
+    height: auto;
+    border-radius: 8px; /* Borda arredondada para imagens */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.section-image .text-content {
+    flex-grow: 1; /* Permite que o texto preencha o espaço disponível */
+    min-width: 300px; /* Largura mínima para o texto antes de quebrar a linha */
+}
+
+/* Estilo específico para imagem à esquerda (aplicado via classe 'left-image' no HTML) */
+.left-image .image-wrapper {
+    order: 0; /* Ordem padrão do Flexbox, imagem vem primeiro (esquerda) */
+    width: 450px; /* Largura da imagem */
+}
+
+/* Estilo específico para imagem à direita (aplicado via classe 'right-image' no HTML) */
+.right-image .image-wrapper {
+    order: 1; /* Imagem vem depois do conteúdo de texto no Flexbox (direita) */
+    width: 450px; /* Largura da imagem */
+}
+
+/* Ajustes para os títulos dentro das seções com imagem ficarem alinhados à esquerda */
+.section-image .text-content h2,
+.section-image .text-content h3 {
+    text-align: left; /* Alinha os títulos à esquerda dentro do bloco de texto */
+}
+
+/* Seção de Playlist de Rock (da página Rock) */
+.rock-playlist {
+    text-align: center; /* Centraliza o conteúdo */
+    padding-bottom: 3rem;
+}
+
+.rock-playlist h3 {
+    margin-bottom: 1rem;
+}
+
+.rock-playlist .playlist-icon {
+    display: inline-block; /* Faz o ícone se comportar como um bloco inline */
+    margin: 1.5rem 0; /* Espaçamento acima e abaixo do ícone */
+    transition: transform 0.2s ease-in-out; /* Efeito suave ao passar o mouse */
+}
+
+.rock-playlist .playlist-icon:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente no hover */
+}
+
+.rock-playlist .playlist-icon svg {
+    display: block; /* Remove espaço extra abaixo do SVG */
+}
+
+.rock-playlist .playlist-cta {
+    font-style: italic;
+    color: #555;
+    margin-top: 0;
+}
+
+
+/* Botão "Voltar ao topo" */
+.topo-btn {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto 0 auto;
+    padding: 0.5rem 1rem;
+    background-color: #ffcc00;
+    color: #222;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.topo-btn:hover {
+    background-color: #e0b300;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Media Queries para Responsividade */
+/* Para telas até 900px de largura */
+@media (max-width: 900px) {
+    /* Para as seções com imagem (Rock, K-POP, MPB) */
+    .section-image .image-wrapper {
+        width: 100%; /* Imagem ocupa largura total em telas menores */
+        max-width: 450px; /* Limita o tamanho máximo da imagem */
+        margin-bottom: 20px; /* Espaço abaixo da imagem quando empilhada */
+        order: 0; /* Garante que a imagem sempre venha primeiro quando empilhada */
+    }
+
+    .section-image {
+        flex-direction: column; /* Empilha imagem e texto verticalmente */
+        align-items: center; /* Centraliza o conteúdo quando empilhado */
+        text-align: center; /* Centraliza o texto para o layout empilhado */
+    }
+
+    .section-image .text-content h2,
+    .section-image .text-content h3 {
+        text-align: center; /* Centraliza os títulos quando empilhados */
+    }
+
+    /* Para a primeira seção da página Index (Início da Música) */
+    .inicio-musica .imagem {
+        float: none; /* Remove o float em telas menores */
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto 20px auto; /* Centraliza e adiciona margem inferior */
+        display: block;
+    }
+
+    .inicio-musica .texto {
+        text-align: center; /* Centraliza o texto da primeira seção */
+    }
+}
+
+/* Para telas até 768px de largura */
+@media (max-width: 768px) {
+    .titulo h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    section h2,
+    section h3 {
+        font-size: 2em;
+    }
+}
+
+/* Para telas até 480px de largura */
+@media (max-width: 480px) {
+    .titulo h1 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+        padding: 0.4rem 0.8rem;
+    }
+
+    section h2,
+    section h3 {
+        font-size: 1.8em;
+    }
+}

@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso ao Sistema</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+    <div class="container">
+        <h1>Acesso ao Sistema</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Login:</td>
+                    <td><input type="text" id="login"></td>
+                </tr>
+                <tr>
+                    <td>Senha:</td>
+                    <td>
+                        <input type="password" id="senha" maxlength="8">
+                        <span>(max. 8 caracteres)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Confirmar Senha:</td>
+                    <td>
+                        <input type="password" id="confirmaSenha" maxlength="8">
+                        <span>(max. 8 caracteres)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="botoes">
+                        <button id="btnEntrar">Entrar</button>
+                        <button id="btnLimpar">Limpar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

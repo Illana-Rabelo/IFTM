@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
 
+        <h1>Calculadora</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td>1° Valor:</td>
+                    <td><input type="number" id="valor1"></td>
+                </tr>
+                <tr>
+                    <td>2° Valor:</td>
+                    <td><input type="number" id="valor2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button class="operador" data-op="+">+</button>
+                        <button class="operador" data-op="-">-</button>
+                        <button class="operador" data-op="*">*</button>
+                        <button class="operador" data-op="/">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Resultado:</td>
+                    <td><input type="text" id="resultado" disabled></td>
+                </tr>
+            </tbody>
+        </table>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

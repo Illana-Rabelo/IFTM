@@ -1,0 +1,58 @@
+body {
+    font-family: Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: blue;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+
+table {
+    margin: 20px auto;
+}
+
+td {
+    padding: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+span {
+    color: red;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+}
+
+.botoes button {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.botoes button:hover {
+    background-color: #e8e8e8;
+}

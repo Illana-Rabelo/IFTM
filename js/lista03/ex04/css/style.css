@@ -1,0 +1,9 @@
+table {
+            margin: 0;
+        }
+        td {
+            padding: 2px; 
+        }
+        input[type="button"] {
+            width: 25%; 
+        }

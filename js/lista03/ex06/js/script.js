@@ -31,7 +31,7 @@ botoesOperador.forEach(botao => {
                 calculo = v1 * v2;
                 break;
             case '/':
-                // Trata a divisão por zero
+                // verifica a divisão por zero
                 if (v2 === 0) {
                     alert("Erro: Divisão por zero não é permitida.");
                     return;
@@ -44,3 +44,4 @@ botoesOperador.forEach(botao => {
     });
 
 });
+

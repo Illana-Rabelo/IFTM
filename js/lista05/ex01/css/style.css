@@ -1,0 +1,22 @@
+ body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centraliza verticalmente */
+            align-items: center;    /* Centraliza horizontalmente */
+            min-height: 100vh;      /* Ocupa a altura total do viewport */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        #personagem {
+            cursor: pointer; /* Indica que é clicável */
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        #mensagem {
+            font-size: 1.2em;
+            font-weight: bold;
+        }

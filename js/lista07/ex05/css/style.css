@@ -1,0 +1,23 @@
+      body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #00A88F;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        #nomesContainer p {
+            font-size: 1.2em;
+            margin: 5px 0;
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }

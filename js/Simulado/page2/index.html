@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="../papaiNoel/css/style.css">
+</head>
+
+<body>
+
+    <p>
+        1) Texto informado pelo usuário na página anterior
+    </p>
+
+    <p id="txtInformado" class="txtInformado">
+        <p />
+
+    <p>
+        2) Você gostaria de analisar a informação disponibilizada pelo usuário na página anterior?
+    </p>
+
+    <form id="formSelect">
+        <select id="select">
+            <option value="1">Sim</option>
+            <option value="0">Não</option>
+        </select>
+    </form>
+
+    <p>OBS: Se você responder "não" na pergunta anterior (2), por favor informe um novo texto na caixa abaixo:</p>
+
+    <form id="cxTxtNovo">
+        <input type="text" id="novoTxt" class="novoTxt">
+        <br>
+        <input type="button" value="Analisar" id="btnAnalisar">
+    </form>
+
+    <hr>
+    <label> 3) Quantidade de palavras contidas no texto:</label><span id="qtdPalavra"></span>
+    <br><br>
+
+    <!-- usando o label para não pular linhas -->
+    <label> 4) Palavras iniciadas com a letra M:</label>
+    <input type="text" id="inicialPalavra" disabled>
+    <br><br>
+
+    <label> 5) Primeira palavra do texto: </label>
+    <input type="text" id="primeiraPalavra" disabled>
+    <br><br>
+
+    <label>6) Segunda palavra do texto:</label>
+    <input type="text" id="segundaPalavra" disabled>
+    <br><br>
+
+    <label> 7) Última palavra do texto:</label>
+    <input type="text" id="ultimaPalavra" disabled>
+    <input type="button" value="Abrir a página do papai noel" id="papaiNoel">
+    <br><br>
+
+
+
+
+    <script src="js/script.js" type="module"></script>
+
+</body>
+
+</html>

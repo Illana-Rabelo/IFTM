@@ -1,0 +1,37 @@
+p, label{
+    font-weight: bolder;
+}
+
+.txtInformado{
+    font-weight: normal;
+}
+
+.novoTxt{
+    width: 350px;
+}
+
+.noel{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#btnFalas{
+    background-color: green;
+    color: white;
+    margin-top:  10px;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+#btnFalas:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#pergunta{
+      font-weight: normal; 
+}
+
+#cxTxt{
+    width: 350px;
+}

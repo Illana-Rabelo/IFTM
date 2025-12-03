@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício sobre REGEX</title>
+
+    <style>
+      
+        form {
+            margin-bottom: 5px;
+        }
+
+        label {
+            display: inline-block;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- a) data de nascimento -->
+    <form>
+        <label for="dataNascimento">Data de Nascimento: </label>
+        <input type="text" id="dataNascimento" value="01/01/2000"
+            onkeypress="inserirMascara('dataNascimento', 'xx/xx/xxxx')">
+        <input type="button" value="Validar" id="btnValidarDataNascimento">
+    </form>
+
+    <!-- b) cpf -->
+    <form>
+        <label for="cpf">CPF (jwifi): </label>
+        <input type="text" id="cpf" value="123.456.789-00" onkeypress="inserirMascara('cpf', 'xxx.xxx.xxx-xx')">
+        <input type="button" value="Validar" id="btnValidarCpf">
+    </form>
+
+    <!-- c) matrícula do IFTM -->
+    <form>
+        <label for="matricula">Número de Matrícula: </label>
+        <input type="text" id="matricula" value="IFTM-123/456-a1">
+        <input type="button" value="Validar" id="btnValidarMatricula">
+    </form>
+
+    <!-- d) código de disciplina -->
+    <form>
+        <label for="codDisciplina">Código de Disciplina: </label>
+        <input type="text" id="codDisciplina" value="MT-12.345-IFTM"
+            onkeypress="inserirMascara('codDisciplina', 'AA-xx.xxx-AAAA')">
+        <input type="button" value="Validar" id="btnValidarCodDisciplina">
+    </form>
+
+    <!-- e) código da disciplina v2 -->
+    <form>
+        <label for="codDisciplina2">Código de Disciplina v2: </label>
+        <input type="text" id="codDisciplina2" value="MT-12.345-iftm"
+            onkeypress="inserirMascara('codDisciplina2', 'AA-xx.xxx-AAAA')">
+        <input type="button" value="Validar" id="btnValidarCodDisciplina2">
+    </form>
+
+    <!-- f) código da disciplina v3 -->
+    <form>
+        <label for="codDisciplina3">Código de Disciplina v3: </label>
+        <input type="text" id="codDisciplina3" value="MT-12.345-IFTM">
+        <input type="button" value="Validar" id="btnValidarCodDisciplina3">
+    </form>
+
+    <!-- g) código da disciplina v2 -->
+    <form>
+        <label for="codDisciplina4">Código de Disciplina v4: </label>
+        <input type="text" id="codDisciplina4" value="MT-12.345-IFTM Uberlândia Centro">
+        <input type="button" value="Validar" id="btnValidarCodDisciplina4">
+    </form>
+
+    <!-- h) nome do campus do IFTM -->
+    <form>
+        <label for="nomeCampus">Nome de Campus do IFTM: </label>
+        <input type="text" id="nomeCampus" value="IFTM campus Uberlândia Centro">
+        <input type="button" value="Validar" id="btnValidarNomeCampus">
+    </form>
+
+    <!-- i) número de telefone -->
+    <form>
+        <label for="telefone">Telefone: </label>
+        <input type="text" id="telefone" value="+55(34)98888-7777"
+            onkeypress="inserirMascara('telefone', '+xx(xx)xxxxx-xxxx')">
+        <input type="button" value="Validar" id="btnValidarTelefone">
+    </form>
+
+    <!-- j) número de telefone v2 -->
+    <form>
+        <label for="telefone2">Telefone v2: </label>
+        <input type="text" id="telefone2" value="(34)98888-7777">
+        <input type="button" value="Validar" id="btnValidarTelefone2">
+    </form>
+
+    <!-- k) altura da pessoa -->
+    <form>
+        <label for="altura">Altura da Pessoa: </label>
+        <input type="text" id="altura" value="1,75">
+        <input type="button" value="Validar" id="btnValidarAltura">
+    </form>
+
+    <!-- l) faturamento anual -->
+    <form>
+        <label for="faturamento">Faturamento Anual: </label>
+        <input type="text" id="faturamento" value="R$1.500,41">
+        <input type="button" value="Validar" id="btnValidarFaturamento">
+    </form>
+
+    <!-- m) cronômetro -->
+    <form>
+        <label for="cronometro">Cronômetro: </label>
+        <input type="text" id="cronometro" value="23:59:59:99" onkeypress="inserirMascara('cronometro', 'xx:xx:xx:xx')">
+        <input type="button" value="Validar" id="btnValidarCronometro">
+    </form>
+
+    <!-- n) senha -->
+    <form>
+        <label for="senha">Senha: </label>
+        <input type="text" id="senha" value="321a.&apMb.aei.Ab0-asf+_,/*.cq">
+        <input type="button" value="Validar" id="btnValidarSenha">
+    </form>
+
+    <br>
+    <div id="resultadoValidacao"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/jMaskWiFi.js"></script>
+</body>
+
+</html>

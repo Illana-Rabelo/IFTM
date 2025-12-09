@@ -1,10 +1,9 @@
-<!-- cadastro.html (COMPLETO) -->
 <!doctype html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Cadastro - Jogo da Velha</title>
+<title>Cadastro</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-enter">
@@ -38,15 +37,6 @@
 
 <script src="js/common_bg.js"></script>
 <script src="js/auth.js"></script>
-<script>
-document.querySelectorAll(".btn-zoom").forEach(btn => {
-    btn.addEventListener("click", function(e){
-        const destino = this.getAttribute("href");
-        e.preventDefault();
-        document.body.classList.add("page-zoom");
-        setTimeout(()=> window.location.href = destino, 350);
-    });
-});
-</script>
+  
 </body>
 </html>

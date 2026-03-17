@@ -1,0 +1,27 @@
+[
+  {
+    "nome": "Kim Minseok",
+    "depoimento": "Produto excelente, superou minhas expectativas.",
+    "rating": 5
+  },
+  {
+    "nome": "Wong Yukhei",
+    "depoimento": "Bom custo-benefício, recomendo.",
+    "rating": 4
+  },
+  {
+    "nome": "Park Jisung",
+    "depoimento": "Entrega rápida, mas o produto poderia ser melhor.",
+    "rating": 3
+  },
+  {
+    "nome": "Lee Taeyong",
+    "depoimento": "Não gostei muito, esperava mais qualidade.",
+    "rating": 2
+  },
+  {
+    "nome": "Huang Hani",
+    "depoimento": "Produto ruim, não recomendo.",
+    "rating": 1
+  }
+]

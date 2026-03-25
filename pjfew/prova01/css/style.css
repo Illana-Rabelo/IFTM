@@ -1,0 +1,85 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    /* Fundo escuro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f0f0f0;
+}
+
+.login-container {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+    width: 320px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #ff79c6;
+    /* Rosa vibrante */
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a2a2a;
+    border: 2px solid #bd93f9;
+    /* Roxo */
+    border-radius: 6px;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #6272a4;
+}
+
+input:focus {
+    border-color: #ff79c6;
+    /* Muda para rosa no foco */
+    box-shadow: 0 0 8px rgba(255, 121, 198, 0.4);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #bd93f9, #ff79c6);
+    /* Degradê Roxo/Rosa */
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(189, 147, 249, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}

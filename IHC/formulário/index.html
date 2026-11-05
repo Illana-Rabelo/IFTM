@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Consulta de Publicações</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="header-content">
+            <h1>Biblioteca Digital IFTM</h1>
+            <p>Portal de Consulta e Acervo Acadêmico</p>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="search-card">
+            <div class="card-header">
+                <h2>Consulta de Obras</h2>
+                <p>Preencha os campos abaixo para buscar livros, revistas e artigos na base de dados.</p>
+            </div>
+
+            <form id="search-form" novalidate>
+                <div class="input-group">
+                    <label for="input-author">Autor</label>
+                    <input type="text" id="input-author" placeholder="Ex: Machado de Assis">
+                </div>
+
+                <div class="input-group">
+                    <label for="input-title">Título</label>
+                    <input type="text" id="input-title" placeholder="Ex: Dom Casmurro">
+                </div>
+
+                <div class="input-group">
+                    <label for="input-isbn">ISBN</label>
+                    <input type="text" id="input-isbn" placeholder="Ex: 978-85-359" maxlength="20">
+                </div>
+
+                <div id="error-message" class="error-message hidden" aria-live="polite"></div>
+
+                <div class="form-actions">
+                    <button type="button" id="btn-clear" class="btn secondary">Limpar</button>
+                    <button type="submit" id="btn-search" class="btn primary">Pesquisar</button>
+                </div>
+            </form>
+
+            <div id="results-container" class="results-container hidden">
+                <div class="spinner hidden" id="loading-spinner"></div>
+                <div id="result-content"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy; 2026 IFTM Campus Uberlândia Centro — Interface Humano-Computador</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
